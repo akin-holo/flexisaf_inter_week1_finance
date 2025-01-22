@@ -1,25 +1,44 @@
-// Function to display contacts
-function showContacts() {
-   const mates = ["Juls", "Basil", "Mahmud"];
-   let output = '';
+let mates = ["Juls", "Basil", "Mahmud"];
 
-   // Create an unordered list
-   output += '<ul>';
-   for (let mate of mates) {
-       output += `<li>${mate}</li>`; // Add each contact as a list item
-   }
-   output += '</ul>';
+function renderContacts() {
+    const container = document.getElementById('contact-container');
+    container.innerHTML = ''; 
 
-   return output;
+    const ul = document.createElement('ul');
+
+    mates.forEach((mate, index) => {
+        const li = document.createElement('li');
+        li.textContent = mate;
+        li.setAttribute('data-index', index); 
+        ul.appendChild(li);
+    });
+
+    container.appendChild(ul);
 }
 
-// Add the contacts list to the page
-document.addEventListener('DOMContentLoaded', () => {
-   // Select a container or create one dynamically
-   const container = document.createElement('div');
-   container.className = 'contact-list';
-   container.innerHTML = showContacts();
+// adding  contact
+function addContact() {
+    const newContact = prompt('Enter the name of the new contact:');
+    if (newContact) {
+        mates.push(newContact); 
+        renderContacts(); 
+    }
+}
 
-   // Append the container to the body or another element
-   document.body.appendChild(container);
-});
+// removing  contact
+function removeContact() {
+    const index = prompt('Enter the number of the contact to remove (1 for the first contact, etc.):');
+    const contactIndex = parseInt(index, 10) - 1;
+
+    if (contactIndex >= 0 && contactIndex < mates.length) {
+        mates.splice(contactIndex, 1); 
+        renderContacts(); 
+    } else {
+        alert('Invalid contact number.');
+    }
+}
+
+document.getElementById('add-contact').addEventListener('click', addContact);
+document.getElementById('remove-contact').addEventListener('click', removeContact);
+
+document.addEventListener('DOMContentLoaded', renderContacts);
