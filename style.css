@@ -62,3 +62,55 @@ nav button span {
 nav button:hover span {
    color: #008000;
 }
+
+
+
+/* main  */
+main {
+   margin: 1rem auto;
+}
+
+         /*Overview style beginning*/
+.overview-heading {
+   text-transform: capitalize;
+   text-align: left;
+   margin:0 0 20px 0;
+   font-size: 25px;
+}
+.overview-items-wrap {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 20px;
+}
+.item-wrap {
+   width: 300px;
+   height: 80px;
+   line-height: 0.8;
+   border-radius: 10px;
+   background-color: #fff;
+   font-weight: 600;
+   font-family: "Inter", serif;
+}
+.item-wrap  p {
+   margin: 1em 0 0 2em;
+}
+.item-wrap .item-head {
+   font-size: 12px;
+}
+.item-wrap .amount {
+   font-size: 22px;
+}
+
+/* ,
+.item-wrap .item-head {
+
+} */
+.balance-wrap {
+   color: #fff;
+   text-align: justify;
+   background-color: #000;
+}         /*Overview style end*/
+
+
+ 
