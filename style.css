@@ -3,7 +3,7 @@
 body {
    display: flex;
    margin: 0;
-   background-color: hsl(30, 38%, 97%);
+   background-color: hsl(30, 38%, 95%);
    font-family: "Faustina", serif;
 }
 
@@ -12,11 +12,9 @@ header {
    color: #fff;
    width: 250px;
    height: 100vh;
-   /* text-align: justify; */
    background-color: #000;
    border-radius: 0 20px 20px 0;
 }
-
 h1 {
    margin: 1rem 2rem 0; 
 }
@@ -32,9 +30,6 @@ nav {
 .navigation-btn {
    display: flex;
    flex-direction: column;
-   /* justify-content:left; */
-   /* text-align: justify; */
-
 }
 nav button {
    color: #fff;
@@ -53,7 +48,7 @@ nav button {
 nav button:hover {
    color: initial;
    margin: 5px auto 5px 0;
-   background-color: hsl(30, 38%, 97%);
+   background-color: hsl(30, 38%, 95%);
    transition: 0.4s;
 }
 nav button span {
@@ -70,14 +65,14 @@ main {
    margin: 1rem auto;
 }
 
-         /*Overview style beginning*/
 .overview-heading {
    text-transform: capitalize;
    text-align: left;
    margin:0 0 20px 0;
    font-size: 25px;
 }
-.overview-items-wrap {
+                   /*account style beginning*/
+.account-items-wrap { 
    display: flex;
    justify-content: space-evenly;
    align-items: center;
@@ -110,7 +105,104 @@ main {
    color: #fff;
    text-align: justify;
    background-color: #000;
-}         /*Overview style end*/
+}/*account style end*/
+
+
+
+.pots-info {
+   width: 500px;
+   height: 140px;
+   background-color: #fff;
+   border-radius: 5px;
+}
+.pots-items-wrapper {
+   margin: 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.pots-heading {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 0.8em;
+}
+.pots-body {
+   display: flex;
+   gap: 20px;
+}
+.total-save-wrap {
+   display: flex;
+   align-items: center;
+   width: 50%;
+   height: 60px;
+   background-color: hsl(30, 38%, 95%);
+   border-radius: 10px;
+   gap: 20px;
+}
+.dollar-icon {
+   color: #008000;
+   margin-left: 20px;
+   font-size: 24px;
+}
+.total-save-info {
+  line-height: 0;
+}
+.total-saved {
+   color: rgb(156, 154, 154);
+   font-weight: 600;
+   font-size: 12px;
+}
+.total-saved-amount {
+   font-size: 24px;
+}
+.saving-info {
+   height: 25px; 
+   line-height: 0;
+   margin-bottom: 10px;
+   text-align: justify;
+   text-indent: 10px;
+   border-left: 2px solid #008000;
+}
+.ticket-info {
+   height: 25px; 
+   line-height: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-indent: 10px;
+   border-left: 2px solid #000;  
+}
+.gift-info {
+   height: 25px;
+   line-height: 0;
+   margin-bottom: 10px;
+   text-align: justify;
+   text-indent: 10px;
+   border-left: 2px solid #add8eb;  
+}
+.laptop-info {
+   height: 25px;
+   line-height: 0;
+   margin-bottom: 10px;
+   text-align: justify;
+   text-indent: 10px;
+   border-left: 2px solid hsl(30, 74%, 79%);  
+}
+.savings,
+.current-ticket,
+.gift,
+.new-laptop {
+   color: rgb(156, 154, 154);
+   font-weight: 500;
+   font-size: 10px;
+}
+.savings-amount, 
+.ticket-amount,
+.gift-amount,
+.laptop-amount {
+   font-size: 14px;
+   font-weight: bold;
+}
 
 
  
