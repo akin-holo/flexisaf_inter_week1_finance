@@ -108,34 +108,47 @@ main {
 }/*account style end*/
 
 
-
+.pot-and-trans-wrapper {
+   display: flex;
+   flex-direction: column;
+   margin: 10px auto;
+   gap: 10px; 
+}
 .pots-info {
    width: 500px;
-   height: 140px;
+   height: 125px;
    background-color: #fff;
    border-radius: 5px;
+   overflow: hidden;
 }
 .pots-items-wrapper {
-   margin: 1em;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+   width: 500px;
+   height: 125px;
 }
 .pots-heading {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   align-items: center;
    font-size: 0.8em;
+   margin: 0 10px 0;
 }
 .pots-body {
    display: flex;
+   justify-content: center;
+   align-items: center;
    gap: 20px;
 }
 .total-save-wrap {
    display: flex;
+   flex: 1;
    align-items: center;
    width: 50%;
-   height: 60px;
+   height: 55px;
+   margin: 0 0 15px 10px;
    background-color: hsl(30, 38%, 95%);
    border-radius: 10px;
    gap: 20px;
@@ -155,6 +168,15 @@ main {
 }
 .total-saved-amount {
    font-size: 24px;
+}
+
+.stgl-wrapper {
+   display: flex;
+   flex: 1;
+   justify-content: center; 
+   align-items: center; 
+   width: 50%;  
+   gap: 20px; 
 }
 .saving-info {
    height: 25px; 
@@ -203,6 +225,69 @@ main {
    font-size: 14px;
    font-weight: bold;
 }
+
+
+            /* Transactions style*/
+.trans-info {
+   width: 500px;
+   background-color: #fff; 
+   height: 260px; 
+   border: 2px solid #00000010;
+   border-radius: 10px;
+}
+.transactions-wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto 1em;
+}
+.view-all {
+   font-size: 14px;
+}
+.contact-wrap {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0.5em;
+   gap: 8px;
+}
+.contact-info {
+   display: flex;
+   width: 100%;
+   justify-content: space-between; 
+   align-items: center;
+   border: 1px solid hsl(30, 74%, 98%);  
+   border-radius: 10px;
+}
+.profile {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.profile-pix {
+   display: flex;
+   width: 30px;
+   height: 30px;
+   background-color: #000;
+   border-radius: 50%;
+}
+.profile-name {
+   font-weight: 100;
+   font-size: 12px;
+} 
+.amount-and-date-wrap {
+   display: flex;
+   flex-direction: column;
+}
+.transaction-amount {
+   color: #008000;
+   font-weight: 600;
+   font-size: 12px;
+}
+time {
+   color: rgb(156, 154, 154);
+   font-size: 10px;
+}/* Transactions style end*/
 
 
  
