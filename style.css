@@ -108,11 +108,20 @@ main {
 }/*account style end*/
 
 
+/* Pots Transaction, Budgets and Recurring Bill wrap  */
+.other-sections-container {
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+   align-items: center; 
+}
 .pot-and-trans-wrapper {
    display: flex;
    flex-direction: column;
+   width: 55%;
    margin: 10px auto;
    gap: 10px; 
+   line-height: 0;
 }
 .pots-info {
    width: 500px;
@@ -234,6 +243,7 @@ main {
    height: 260px; 
    border: 2px solid #00000010;
    border-radius: 10px;
+   line-height: 1;
 }
 .transactions-wrap {
    display: flex;
@@ -290,4 +300,64 @@ time {
 }/* Transactions style end*/
 
 
+.budgets-and-recurringBill-wrapper {
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   height: 400px;
+   gap: 10px;
+}
+.foo {
+   height: 260px;
+   background-color: #00000000;
+   border-radius: 15px;
+   appearance: none;
+}
+.recurring-info {
+   height: 190px;
+   background-color: #fff;
+   border-radius: 10px;
+}
+.recurring-heading {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 10px;
+   line-height: 0;
+}
+table {
+   border: 0;
+   border-collapse: collapse;
+   margin: 0 10px;
+}
+tr {
+   height: 40px;
+} 
+ .each-bill {
+   color: rgb(104, 103, 103);
+   margin: 10px;
+   background-color:hsl(30, 74%, 96%); 
+   border-radius: 15px; 
+   border-left: 2px solid;
+   border-bottom: 5px solid #fff;
+   font-weight: 300;
+   font-size: 12px;
+ }
+ td {
+   width: 100%;
+   border-collapse: collapse;
+ }
+ .green-border-left {
+   border-left-color: #008000;
+ } 
+ .orange-border-left {
+   border-left-color: orange;
+ } 
+ .lightblue-border-left {
+   border-left-color: #add8eb;
+ } 
+ .bill-amount {
+   color: #000;
+   font-weight: bold;
+ }
  
