@@ -1,0 +1,99 @@
+
+$primary-color: rgb(22, 22, 63);
+$secondary-color: rgb(235, 104, 57);
+$shadow-color: #ffffff49;
+
+body {
+   // display: flex;
+   // flex-direction: column;
+   // justify-content: center;
+   // align-items: center;
+   text-align: center;
+   background-color: $primary-color;
+}
+
+header {
+   font-family: "Poppins", serif;
+
+   h1 {
+      color: #fff;
+   }
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   .time-selection {
+      padding: 5px;
+      margin: 20px;
+      background-color: #0c0c0c;
+      border-radius: 30px;
+
+      button {
+         color: #fff;
+         padding: 10px 15px;
+         background-color: transparent;
+         border-radius: inherit;
+         border: none;
+         font-weight: 600;
+         font-family: "Poppins", serif;
+      }
+      button:hover {
+         color: #000;
+         background-color: $secondary-color;
+         transition: 0.4s;
+      }
+   }
+
+   .time-counter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      box-shadow: 0px -10px 50px 5px $shadow-color;
+
+      .wrap {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         background-color: #0c0c0c;
+         // border: 15px solid;
+         // border-top-color: $shadow-color;
+         // border-right-color: #fff;
+         // border-bottom-color: #ffffff09;
+         // border-left-color: #0c0c0c;
+
+         .pink-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 80%;
+            // background-color: red;
+            border: 15px solid;
+            border-top-color: $secondary-color;
+            border-right-color: $secondary-color;
+            border-bottom-color: $secondary-color;
+            border-left-color: #0c0c0c;
+            border-radius: 50%;
+
+            .the-timer {
+               color: #fff;
+               font-weight: bold;
+               font-size: 5em;
+            }
+         }
+      }
+   }
+}
