@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Finance Dashboard | By Akin Holo</title>
+   <title>Pomodoro Timer | By Akin Holo</title>
 
    <link rel="icon" type="image/x-icon" href="https://github.com/akin-holo/image-preview/blob/main/logo.png?raw=true">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,215 +11,28 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   <link rel="stylesheet" href="style.css">
 
+   <link rel="stylesheet" href="stylesheet/styles.css">
+
 </head>
 <body>
    <header>
-      <h1>Finance</h1>
-      <nav>
-         <div class="navigation-btn">
-            <button><span><i class="fa-solid fa-house"></i></span> overview</button>
-            <button><span><i class="fa-solid fa-arrow-up"></i></span> transactions</button>
-            <button><span><i class="fa-solid fa-clipboard-list"></i></span> budgets</button>
-            <button><span><i class="fa-solid fa-file-invoice-dollar"></i></span> pots</button>
-            <button><span><i class="fa-solid fa-money-bill-transfer"></i></span> recurring bills</button>
-         </div>
-         <button class="minimize-menu"><span><i class="fa-solid fa-left-long"></i></span> minimize menu</button>
-      </nav>
+      <h1>Pomodoro</h1>
    </header>
 
-   <main class="overview-container">
-      <h1 class="overview-heading">overview</h1>
-         <!-- account-->
-      <div  class="account-container">
-         <section class="account-info">
-            <div class="account-items-wrap">
-               <div class="item-wrap balance-wrap ">
-                  <p class="item-head current-balance" style="color: rgb(185, 184, 184);">Current Balance</p>
-                  <p class="amount">$4,836.00</p>
-               </div>
-               <div class="item-wrap income-wrap">
-                  <p class="item-head income" style="color: rgb(185, 184, 184);">Income</p>
-                  <p class="amount">$3,814.25</p>
-               </div>
-               <div class="item-wrap  expenses-wrap">
-                  <p class="item-head expenses" style="color: rgb(185, 184, 184);">Expenses</p>
-                  <p class="amount">$1,700.50</p>
-               </div>
-            </div>
-         </section>
-      </div>
+   <main>
+      <section class="time-selection">
+         <button>pomodoro</button>
+         <button>short break</button>
+         <button>long break</button>
+      </section>
 
-               <!-- Pots Transaction, Budgets and Recurring Bill wrap-->
-      <div class="other-sections-container">
-         <div class="pot-and-trans-wrapper">
-            <!-- Pots-->
-            <section class="pots-info">
-               <div class="pots-items-wrapper">
-                  <div class="pots-heading">
-                     <h2>Pots</h2>
-                     <small>See Details</small>
-                  </div>
-                  <div class="pots-body">
-                     <div class="total-save-wrap">
-                        <span class="dollar-icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
-                        <div class="total-save-info">
-                           <p class="total-saved">Total Saved</p>
-                           <p class="total-saved-amount">$850</p>
-                        </div>
-                     </div>
-                     <div class="stgl-wrapper">
-                        <div class="saving-and-ticket-wrapper">
-                           <div class="saving-info">
-                              <p class="savings">Savings</p>
-                              <p class="savings-amount">$159</p>
-                           </div>
-                           <div class="ticket-info">
-                              <p class="current-ticket">Current Ticket</p>
-                              <p class="ticket-amount">$110</p>
-                           </div>
-                        </div>
-                        <div class="gift-and-laptop-wrapper">
-                           <div class="gift-info">
-                              <p class="gift">Gift</p>
-                              <p class="gift-amount">$40</p>
-                           </div>
-                           <div class="laptop-info">
-                              <p class="new-laptop">New Laptop</p>
-                              <p class="laptop-amount">$10</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-
-            <!-- Transactions-->
-            <section class="trans-info">
-               <div class="transactions-wrap">
-                  <h3 class="transactions">Transactions</h3>
-                  <small class="view-all">View All</small>
-               </div>
-               <div class="contact-wrap">
-                  <div class="contact-info">
-                     <div class="profile">
-                        <img class="profile-pix" src="48.jpg">
-                        <p class="profile-name">Akin Holo</p>
-                     </div>
-                     <div class="amount-and-date-wrap">
-                        <span class="transaction-amount">+975.50</span>
-                        <time datetime="08-14-2024">14 Aug 2024</time>
-                     </div>
-                  </div>
-                  <div class="contact-info">
-                     <div class="profile">
-                        <img class="profile-pix" src="">
-                        <p class="profile-name">Sarah Connor</p>
-                     </div>
-                     <div class="amount-and-date-wrap">
-                        <span class="transaction-amount" style="color: #000;">-$42.50</span>
-                        <time datetime="08-14-2024">15 Aug 2024</time>
-                     </div>
-                  </div>
-                  <div class="contact-info">
-                     <div class="profile">
-                        <img class="profile-pix" src="">
-                        <p class="profile-name">John Connor</p>
-                     </div>
-                     <div class="amount-and-date-wrap">
-                        <span class="transaction-amount">+$120.00</span>
-                        <time datetime="08-14-2024">17 Aug 2024</time>
-                     </div>
-                  </div>
-                  <div class="contact-info">
-                     <div class="profile">
-                        <img class="profile-pix" src="">
-                        <p class="profile-name">Nice Guy</p>
-                     </div>
-                     <div class="amount-and-date-wrap">
-                        <span class="transaction-amount" style="color: #000;">-$65.00</span>
-                        <time datetime="08-14-2024">17 Aug 2024</time>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </div>
-
-         <div class="budgets-and-recurringBill-wrapper">
-            <!-- Budgets-->
-            <section class="budgets-info">
-               <div class="budgets-heading">
-                  <h3 class="budgets">Budgets</h3>
-                  <small>See Details</small>
-               </div>
-               <div class="budgets-body">
-                  <div class="chart-wrap" >
-                     <!-- <div class="the-chart">
-                        <p class="total-budget">$338</p>
-                        <small>of 3975 exs</small>
-                     </div> -->
-                  </div>
-                  <div class="budget-list-wrapper">
-                     <div class="list-wrap entertain">
-                        <p class="entertainment">Entertainment</p>
-                        <p class="budget-amount">$50.00</p>
-                     </div>
-                     <div class="list-wrap bil">
-                        <p class="bills">Bills</p>
-                        <p class="budget-amount">$758.08</p>
-                     </div>
-                     <div class="list-wrap pers-care">
-                        <p class="personal-care">Personal care</p>
-                        <p class="budget-amount">$100.00</p>
-                     </div>
-                     <div class="list-wrap diving ">
-                        <p class="diving-out">Diving Out</p>
-                        <p class="budget-amount">$75.00</p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-
-            <!-- Recurring Bills -->
-            <section class="recurring-info">
-               <div class="recurring-heading">
-                  <h3 class="recurring-bills">Recurring Bills</h3>
-                  <small>See Details</small>
-               </div>
-               <div class="recurring-body" role="presentation">
-                  <table>
-                     <tbody>
-                        <tr class="each-bill green-border-left">
-                           <td>Paid Bills</td>   
-                           <td class="bill-amount">$190.00</td>     
-                        </tr>
-                        <tr class="each-bill orange-border-left">
-                           <td>Total Upcoming</td>                        
-                           <td class="bill-amount">$194.98</td>                        
-                        </tr>
-                        <tr class="each-bill lightblue-border-left">
-                           <td>Due Soon</td>                        
-                           <td class="bill-amount">$59.00</td>                        
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </section>
-         </div>
-      </div>
-      <!-- <p>My contacts list</p>
-
-      <div id="contact-container">
-     </div>
-
-     <button id="add-contact">Add Contact</button>
-
-     <br>
-     <br>
-
-     <button id="remove-contact">Remove Contact</button> -->
-
+      <section class="time-counter">
+         <div class="pink-border">
+           <div class="the-timer" role="timer">30:00</div> 
+         </div>  
+         <button>pause</button>
+      </section class="time-counter">
    </main>
-   <script src="array.js"></script>
 </body>
 </html>
 
